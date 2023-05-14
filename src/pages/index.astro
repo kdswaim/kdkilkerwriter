@@ -1,11 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import TopMessage from '../components/TopMessage.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="PageLayout">
+	<TopMessage />
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Reflections</h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -45,6 +47,7 @@ import Card from '../components/Card.astro';
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
+		color: antiquewhite;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
