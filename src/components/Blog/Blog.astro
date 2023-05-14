@@ -1,5 +1,6 @@
 ---
 import Butter from 'buttercms';
+import Blogheader from '../Blog/Blogheader.astro';
 
 const butter = Butter('df387bceff14b6ad7ab9be9343bfe7383b779d19');
 
@@ -11,7 +12,11 @@ try {
   console.error(err);
 }
 ---
-
+<div id="Blog-wrapper">
+<div id="Blogheader">
+<Blogheader />
+</div>
+<div id="Blog-wrapper">
 {posts && posts.length > 0 ? (
   <div id="post-list">
     {posts.map((post) => (
@@ -25,24 +30,28 @@ try {
 ) : (
   <p>No posts found</p>
 )}
+</div>
+</div>
+</div>
 
 <style>
-main {
-    width: 80%;
-    margin: 0 auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#Blogheader{
+  width: 100%;
+}
+
+#Blog-wrapper{
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 2em;
     color: antiquewhite;
     text-shadow: 1px 1px;
 }
 
 #post-list {
     display: grid;
-    
     grid-gap: 2em;
     height: auto;
 }
@@ -57,7 +66,7 @@ h1 {
     height: 30vh;
     grid-row-start: 1;
     grid-row-end: 3;
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px 3px black;
 }
 
 .post-preview a {

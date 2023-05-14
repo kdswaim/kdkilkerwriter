@@ -1,33 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import TopMessage from '../components/TopMessage.astro';
 import Footer from '../components/Footer.astro';
-import Blog from '../components/Blog.astro';
+import Blog from '../components/Blog/Blog.astro';
 ---
 
 <Layout title="PageLayout">
-	<TopMessage />
 	<main>
+	<div id="TopMessage-wrapper">
+		<TopMessage />
+	</div>
 		<Blog />
 	</main>
 	<Footer />
 </Layout>
 
 <style>
+
+	#TopMessage-wrapper {
+		width: 100%;
+		height: auto;
+	}
+
 	main {
-		margin: auto;
-		padding: 1.5rem;
-		font-family: Georgia, 'Times New Roman', Times, serif;
-		display: block;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
 		margin: 0;
-		color: antiquewhite;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		width: 100%;
+		height: auto;
 	}
-	.BlogIntro{
-		color: antiquewhite;
-	}
+
+	
 </style>
