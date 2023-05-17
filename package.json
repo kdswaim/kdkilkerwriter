@@ -18,8 +18,12 @@
     "astro": "^2.4.1",
     "bootstrap": "^5.3.0-alpha3",
     "buttercms": "^1.2.12",
+    "markdown": "^0.5.0",
+    "marked": "^5.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "sal.js": "^0.8.5",
     "tinacms": "^1.5.5"
   }
 }

@@ -1,41 +1,49 @@
 ---
-//import
+
 ---
 
-        <header>
-        <img src="Banner.png" alt="K.D. Kilker -- Dark Fantasy" class="responsive">
-    </header>
         <div class="topnav">
-                <a class="active" href="#">Blog</a>
-                <a href="#">Books</a>
-                <a href="#">More</a>
-                <a href="#">Me</a>
-        </div>
+            <a class="logo-home" href="#"><img src="K.D.K (2).png"></a>
+                <a href="https://medium.com/@kdkilker.writer" target="blank">Blog</a>
+                <a href="#">Works</a>
+                <a href="#">About</a>
+                <div id="socials">
+                    <a href="#">More</a>
+                    <a href="#"><img src="5305154_fb_facebook_facebook logo_icon.png" alt="Facebook - coming soon!" height="35px"></a>
+                    <a href="#"><img src="5279112_camera_instagram_social media_instagram logo_icon.png" alt="Instagram - coming soon!"height="35px"></a>
+                    <a href="astro.build"><img src="astro-logo-light.png" alt="Powered by Astro" height="35px"></a>
+                </div>
+</div>        </div>
 <style>
      
-        header, .responsive {
-            display: flex;
-            width: 100%;
-            height: fit-content;
-            background-size: cover;
-        }
-        
-        .topnav, a{
+
+        .logo-home img{
             height: auto;
-            width: 100%;
-            overflow: hidden;
-            display:inline-flex;
-            justify-content: space-around;
-            background-color: rgb(24, 23, 23);
+            width: 30vh;
+        }
+
+        .topnav a{
+            display:inline-block;
+            height: 100%;
+            width: 15vw;
+            padding-top: 2vh;
+        }
+
+        .topnav a:hover {
+            filter: invert(70%);
+            transition: 1s;
+            mix-blend-mode:luminosity;
         }
         
         .topnav a {
             text-decoration: none;
-            font-size: 3vh;
+            font-size: 2rem;
             color:antiquewhite;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            height: auto;
-            width: 100%;
-            padding: 1vh;
+            padding-left: 2vh;
+        }
+
+        .topnav #socials {
+    fill:antiquewhite;
         }
         </style>
